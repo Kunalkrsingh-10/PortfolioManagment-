@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+    <!-- Navbar section -->
+    <nav id="navbar" class="flex s-around bg-color">
+ <div class="left-nav">
+    <h2 class="t-white"> Portfolio</h2>
+     </div>
+     <div class="right-nav">
+        <li><a href='#home' class='t-white roboto'> Home<i class="fa-solid fa-house"></i></a></li>
+        <li><a href='#about' class='t-white roboto'>About me<i class="fa-solid fa-house"></i></a></li>
+        <li><a href='#skill' class='t-white roboto'>Skill<i class="fa-solid fa-house"></i></a></li>
+        <li><a href='#projects' class='t-white roboto'>Project<i class="fa-solid fa-project-digram"></i></a></li>
+        <li><a href='#contact' class='t-white roboto'>Contact<i class="fa-solid fa-rocket"></i></a></li>
+        
+     </div>
+    </nav>
+    <!-- Home section -->
+    <section id="home" class="flex s-around sw-80 m-auto"> 
+    <div class="home-left flex items-center"> 
+        <div class="home-content">
+            <h6 class="popinss">Hi , i'm  </h6>
+            <h1 class="t-white">Kunal kumar  </h1> 
+            <h4 class="popinss"> Software engineering</h4> 
+            <a href="{% static 'pdf/django.pdf'%}" target="_blank">
+                <button class="btn popinss ">Resume</button>
+            </a>
+            <a class="btn popinss live " id ="hire me " href="" target="_blank"> let's talk </a>
+        </div>
+
+    </div>
+    <div class="home-right flex items-center s-center"> 
+        <div class="circle flex-center items-center " id="mainimage"> 
+            <img src="{% static 'images/mypic.png'%}" alt="picture" >
+        </div>
+    </div>
+    </section>
+<!--  About section -->
+  <section id ="about ">
+    <h1 class="t center my-2 t-white f-2 ">About me<Menu> </Menu> </h1>
+    <div class="about-container flex s-around"> 
+        <div class="about-left flex s-center items-center">
+        <img src="{% static 'images/dog.png'%}" alt="dog image">
+        </div>
+    </div>
+    <div class="about-right flex ">
+        <div class="about-content"> 
+            <h1 class="t-white m-b-1 popinss"> Kunal kumar </h1> 
+            <p class="t-white popinss"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, culpa.</p> 
+            <a class="btn" id="hireme" href=""> Hire me </a>
+    </div>
+    </div>
+  </section>
+  <!-- skills section -->
+   <section class="section-id"> 
+    <h1 class="t-center my-2 t-white f-2 "> Skills </h1> 
+    <div class="services-container flex s-around items-center ">
+        <div class="skills-left flex s-center items-center ">
+            <img src={% static 'images/pro.png'%} alt="skills-image">
+        </div>
+        <div class="skills-right flex items-center">
+            <div class="skills-container ">
+                <div class="java bar p-relative">
+                <span class="bar-content left t-white ">Python </span>
+                <span class="bar-content right-skills t-white">90 % </span>
+                </div>
+                <div class="js bar p-relative">
+                <span class="bar-content left t-white ">Javasript </span>
+                <span class="bar-content right-skills t-white">90 % </span>
+                </div>
+                <div class="html bar p-relative">
+                <span class="bar-content left t-white ">HTML </span>
+                <span class="bar-content right-skills t-white">90 % </span>
+                </div>
+                <div class="css bar p-relative">
+                <span class="bar-content left t-white ">CSS </span>
+                <span class="bar-content right-skills t-white">90 % </span>
+                </div>
+                <div class="sql bar p-relative">
+                <span class="bar-content left t-white ">SQL </span>
+                <span class="bar-content right-skills t-white">90 % </span>
+                </div>
+            </div>
+             </div> 
+    </div>
+   </section>
+
+   <!-- Project section -->
+    <section id="Project">
+        <h1 class="t-center my-2 t-white f-2">Project </h1>
+        <div class="project-container flex s-center "> 
+            <div class="project-items flex f-col s-center items-center">
+                <h1>Music Genre classification </h1>
+                <p class="t-white popinss">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <div class="button flex s-around ">
+                    <a href="" target="_blank" class="btn mx-1 m-top">Github</a>
+                </div>
+            </div>
+        </div>
+        <div class="project-container flex s-center "> 
+            <div class="project-items flex f-col s-center items-center">
+                <h1>Music Genre classification </h1>
+                <p class="t-white popinss">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <div class="button flex s-around ">
+                    <a href="" target="_blank" class="btn mx-1 m-top">Github</a>
+                </div>
+            </div>
+        </div> 
+        <div class="project-container flex s-center "> 
+            <div class="project-items flex f-col s-center items-center">
+                <h1>Music Genre classification </h1>
+                <p class="t-white popinss">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <div class="button flex s-around ">
+                    <a href="" target="_blank" class="btn mx-1 m-top">Github</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
