@@ -29,7 +29,7 @@
             <h6 class="popinss">Hi , i'm  </h6>
             <h1 class="t-white">Kunal kumar  </h1> 
             <h4 class="popinss"> Software engineering</h4> 
-            <a href="{% static 'pdf/django.pdf'%}" target="_blank">
+            <a href="{% static 'pdf/Kunal__resume_sde.pdf'%}" target="_blank">
                 <button class="btn popinss ">Resume</button>
             </a>
             <a class="btn popinss live " id ="hire me " href="" target="_blank"> let's talk </a>
@@ -106,7 +106,7 @@
         </div>
         <div class="project-container flex s-center "> 
             <div class="project-items flex f-col s-center items-center">
-                <h1>Music Genre classification </h1>
+                <h1>Zomato clone  </h1>
                 <p class="t-white popinss">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 <div class="button flex s-around ">
                     <a href="" target="_blank" class="btn mx-1 m-top">Github</a>
@@ -115,7 +115,7 @@
         </div> 
         <div class="project-container flex s-center "> 
             <div class="project-items flex f-col s-center items-center">
-                <h1>Music Genre classification </h1>
+                <h1>My portfolio  </h1>
                 <p class="t-white popinss">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 <div class="button flex s-around ">
                     <a href="" target="_blank" class="btn mx-1 m-top">Github</a>
@@ -123,5 +123,52 @@
             </div>
         </div>
     </section>
+    <!-- Contact me section -->
+     <section id= "contact" class="m-b-1">
+        <h1 class="t-center my-2 t-white f-2 "> Contact me </h1> 
+        <div class="Contact-container flex s-around items-center">
+            <div class="form" id="contactform"> 
+                <form method="POST">
+                     {% csrf_token %}
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="popinss" placeholder="Enter your name">
+                    </div>
+                    <div class="email form-div">
+                        <input type="email" name="email" id="" class="popinss" placeholder="Enter your email" required>
+                    </div>
+                    <div class="phone form-div">
+                        <input type="phone" name="number" id="name" class="popinss" placeholder="Enter your phone" required>
+                    </div>
+                    <div class="content form-div">
+                        <textarea  name="content" id="text" cols='30' rows="10" class="popinss" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn popinss" id="submit"> Send</button>
+                 </form>
+            </div>
+        </div>
+    </section> 
+    <!-- Footer section -->
+     <footer id="footer">
+       <ul class="flex s-center w-80 m-auto my-2 res"> 
+        <li> <a href="#home" class="popinss">Home </a> </li> 
+        <li> <a href="#about" class="popinss">About me </a> </li>
+        <li> <a href="#skills" class="popinss">Skills </a> </li>
+        <li> <a href="#project" class="popinss">Project </a> </li>
+        <li> <a href="#portfolio" class="popinss">Portfolio </a> </li>
+       </ul>
+       <ul class="flex s-center w-80 font-awesome">
+         <a href=" " target="_blank" >
+            <li> <i class="fa-brands fa-linkedin-in"></i> </li>
+        </a>
+        <a href=" " target="_blank" >
+            <li> <i class="fa-brands fa-github"></i> </li>
+        </a>
+        <a href=" " target="_blank" >
+            <li> <i class="fa-brands fa-instagram"></i> </li>
+        </a>
+    </ul>
+    <p class="t-center my-2 popinss">copy; All right reserved -<span class="cpy-white popinss">Error</span></p>
+    </footer>
+
 </body>
 </html>
